@@ -1,0 +1,34 @@
+.skillsWrapper {
+  background-image: linear-gradient(
+    rgba(0, 28, 185, 0.836),
+    rgba(34, 0, 126, 0.7)
+  );
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 30px;
+}
+.img1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+.imgName {
+  font-family: "Caveat", cursive;
+  color: blanchedalmond;
+  font-size: 30px;
+  font-variant: small-caps;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img1:hover {
+  box-shadow: 10px 10px rgb(0, 0, 94);
+  transition: 0.5s;
+  width: 315px;
+  height: 315px;
+}
