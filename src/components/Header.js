@@ -1,29 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import logo from "../images/starImage.png";
 
 const Header = () => {
   return (
-    <div className="container">
-      <div className="headerWrapper">
-        <div className="topLeft">
-          <img className="logoImg" src="./images/logo.png" alt="logo"></img>
-          <span className="logoName">Portfolio Page - Abhimanyu</span>
-        </div>
-
-        <div className="togglePage">
-          <Link to="/" className="links">
-            <span>Home</span>
-          </Link>
-          <Link to="/skills" className="links">
-            <span>My Skills</span>
-          </Link>
-          <Link to="/projects" className="links">
-            <span>Projects</span>
-          </Link>
-        </div>
-      </div>
-    </div>
+    <nav class="navbar text-white bg-black navbarheight">
+      <a class="navbar-brand d-flex flex-row align-items-center">
+        <img src={logo} className="logoSize"></img>
+        <span className="text-white mx-2 fs-4" style={{ fontWeight: "600" }}>
+          StarClinch
+        </span>
+      </a>
+      <span className="weight700 text-14px">Hello, Manish</span>
+    </nav>
   );
 };
 

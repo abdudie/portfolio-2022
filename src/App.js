@@ -5,6 +5,8 @@ import Skills from "./pages/Skills";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Header from "./components/Header";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import Page1 from "./components/Page1/Page1";
 
 function App() {
   return (
@@ -12,9 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Project />} />
+          <Route path="/" element={<Page1 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
